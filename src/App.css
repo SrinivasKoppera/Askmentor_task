@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.navbar {
+  background-color: #025813;
+  height: 50px;
+  position: static;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navlink {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 15px;
+}
+.link:hover{
+  color: orange;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  box-sizing: border-box;
+  background-image: url(./Images/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif, serif,  Tahoma, Geneva, Verdana,  ;
+}
+
+.formcontainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  background-color: rgb(236, 234, 230);
+  box-shadow: 1px 2px 5px #4e4c4c;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+span{
+  color: #8f8c8c;
+  font-size: small;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forminput {
+  /* background-color: blueviolet; */
+  padding: 5px;
+  /* margin: 2px; */
+  width: 80%;
+  display: inline-block;
+}
+
+label {
+  padding: 3px;
+  display: inline-block;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid #4e4c4c;
+
+}
+
+input:focus{
+  outline: 1px solid #8f8c8c;
+  box-shadow: 2px 2px 4px lightblue;
+}
+textarea:focus{
+  outline: 1px solid #8f8c8c;
+  box-shadow: 2px 2px 4px lightblue;
+}
+.btn{
+  background-color: rgb(13, 107, 214);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid #8f8c8c;
+  width: 15rem;
+  margin: 10px;
+}
+
+
+.imagesStyle{
+  widows: 300px;
+  margin-right: 20px;
 }
